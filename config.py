@@ -11,7 +11,7 @@ class Config():
     '''
 
     FLASK_APP = os.getenv('FLASK_APP')
-    FLASK_DEBUG = os.environ.get('FLASK_DEBUG')
+    # FLASK_DEBUG = os.environ.get('FLASK_DEBUG')
     # FLASK_ENV = os.getenv('FLASK_ENV')
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'Crunch peanut butter is best.'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI') or 'sqlite:///' + os.path.join(basedir, 'app.db')
