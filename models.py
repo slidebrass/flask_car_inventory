@@ -49,7 +49,7 @@ class User(db.Model, UserMixin):
     
     def __repr__(self):
         return f'User {self.email} has been added to the database'
-    
+        
 class Car(db.Model):
     id = db.Column(db.String, primary_key=True)
     prod_date = db.Column(db.String(10))
